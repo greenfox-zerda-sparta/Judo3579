@@ -1,0 +1,20 @@
+h1{
+  color: #1C34ED;
+}
+
+h2{
+  color: #D1A411;
+}
+
+.foods{
+  color: blue;
+}
+
+.apple{
+  color: red;
+  list-style-type: disc;
+}
+
+.fruits{
+  list-style-type: disc;
+}
