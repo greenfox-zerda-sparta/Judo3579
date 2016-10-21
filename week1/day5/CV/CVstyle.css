@@ -1,3 +1,20 @@
+.image{
+  position: relative;
+  width: 100%;
+}
+
+.img{
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+}
+
+img2{
+  position: relative;
+  width: 100%;
+}
+
 body{
   margin-left: 150px;
   margin-right: 150px;
