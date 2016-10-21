@@ -1,9 +1,19 @@
 body{
   margin-left: 150px;
+  margin-right: 150px;
   color: #222222;
-  font-family: 'Josefin Sans', sans-serif;'
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 170%;
 }
 
 .first{
   font-weight: bold;
+}
+
+.sub{
+  font-style: italic;
+}
+
+.box{
+  border-bottom: 5px solid #000000;
 }
