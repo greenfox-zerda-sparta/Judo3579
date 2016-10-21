@@ -23,6 +23,10 @@ body{
   line-height: 170%;
 }
 
+p, ul{
+  font-size: 110%;
+}
+
 .first{
   font-weight: bold;
 }
