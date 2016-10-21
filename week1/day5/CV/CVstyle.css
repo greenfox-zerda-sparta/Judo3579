@@ -10,9 +10,10 @@
   width: 100%;
 }
 
-img2{
+.img2{
   position: relative;
-  width: 100%;
+  width: 800px;
+  height: 100px;
 }
 
 body{
