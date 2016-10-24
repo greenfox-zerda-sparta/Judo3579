@@ -12,12 +12,12 @@
 using namespace std;
 
 int main() {
-		string x = "monkey";
+		string x = "cheese";
 		int y = x.length();
 
-		 if(y > 4){
+		 if(y % 2 == 0){
 
-			cout<< "long" << endl;
+			cout<< "True" << endl;
 
 		 }else{
 			 cout<< "short" << endl;
