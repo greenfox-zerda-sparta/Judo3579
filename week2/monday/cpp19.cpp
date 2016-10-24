@@ -20,7 +20,7 @@ int main() {
 			cout<< "True" << endl;
 
 		 }else{
-			 cout<< "short" << endl;
+			 cout<< "False" << endl;
 
 		}
 	return 0;

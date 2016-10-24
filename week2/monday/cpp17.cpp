@@ -19,7 +19,7 @@ int main() {
 
 		 if(w%2 == 0){
 
-			cout<< out;
+			cout<< out++;
 
 		}
 	return 0;

@@ -14,9 +14,9 @@ using namespace std;
 int main() {
 	string m = "Apple";
 
-		for(m = 1; m <= 4; m++){
-			cout<< m << endl;
-		}
+		// for(m = 1; m <= 4; m++){
 
-	return 0;
-}
+		m = m + m + m + m;
+		cout << m;
+		return 0;
+	}

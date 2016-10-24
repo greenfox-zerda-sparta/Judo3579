@@ -12,16 +12,15 @@
 using namespace std;
 
 int main() {
-		string x = "cheese";
-		int y = x.length();
+	int z = 13;
 
-		 if(y % 2 == 0){
+	if ( 10 < z && z < 20 ){
+		cout << "Sweet!";
+	}else if( z <= 10 ){
+		cout << "More!";
+	}else {
+		cout << "Less!" << endl;
+	}
 
-			cout<< "True" << endl;
-
-		 }else{
-			 cout<< "False" << endl;
-
-		}
 	return 0;
 }

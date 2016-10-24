@@ -13,7 +13,7 @@
 using namespace std;
 
 int main() {
-	int i = 1357988018575474;
+	long long int i = 1357988018575474;
 	 	 if(i%11 == 0){
 	 	 cout << "i has 11 as a divisor" << endl;
 	 	}
