@@ -1,15 +1,7 @@
-//============================================================================
-// Name        : Hello.cpp
-// Author      : 
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
-
 #include <iostream>
 #include <string>
 
-//	
+//
 // It should ask questions like:
 //  - Is the number greater than 5? [y/n]
 //  - Is the number smaller than 4? [y/n]
@@ -32,28 +24,43 @@ int main() {
   bool success;
 
 
-  number = (minimum+maximum)/2;
+  do{
+	 number = (minimum + maximum)/2;
+	 cout << "Is your number is greater than  " << number << "? Y/N" << endl;
+	 cin >> response;
+	 if(response == 'Y') {
+	    minimum = number + 1;
+	 } else if(response == 'N') {
+	 	maximum = number;
+	 }
+	 if(minimum == maximum){
+	  cout << "Your number is " << maximum << endl;
+	  success = true;
+	 }
+  }while(success != true);
 
-  cout << "Choose a number between 0 and 10" << endl;
-  cout << "Is your number is greater than " << (minimum + maximum)/2 << "? Y/N" << endl;
-  cin >> response;
 
-  while(success != true) {
-  // while(minimum != maximum) {
-    if(response == 'Y') {
-      minimum = number - 1;
-      success = false;
-      cout << "Is your number is greater than  " << minimum << "? Y/N" << endl;
-      cin >> response;
-    } else if(response == 'N') {
-	  maximum = number + 1;
-      success = false;
-	  cout << "Is your number is greater than " << maximum << "? Y/N" << endl;
-	  cin >> response;
-	  break;
-    }
-    }
-  cout << "Your number is " << maximum << endl;
+//  number = (minimum+maximum)/2;
+//
+//  cout << "Choose a number between 0 and 10" << endl;
+//  cout << "Is your number is greater than " << (minimum + maximum)/2 << "? Y/N" << endl;
+//  cin >> response;
+//
+//  while(success != true) {
+//  // while(minimum != maximum) {
+//    if(response == 'Y') {
+//      minimum = number + 1;
+//      success = false;
+//      cout << "Is your number is greater than  " << (minimum + maximum)/2 << "? Y/N" << endl;
+//      cin >> response;
+//    } else if(response == 'N') {
+//	  maximum = number;
+//      success = false;
+//	  cout << "Is your number is greater than " << (minimum + maximum)/2 << "? Y/N" << endl;
+//	  cin >> response;
+//	  break;
+//    }
+//    }
+//  cout << "Your number is " << maximum << endl;
   return 0;
 }
-
