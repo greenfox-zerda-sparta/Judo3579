@@ -15,7 +15,7 @@ private:
 public:
 	Jukebox();
 	void addSong(Song song);
-	bool rate(string title, string artist, int rate);
+	bool rate(string artist, string title, int rate);
 	float getArtistRating(string artist);
 	float getGenreRating(string genre);
 	string getTopRatedTitle();
@@ -23,6 +23,5 @@ public:
 	~Jukebox();
 
 };
-
 
 #endif

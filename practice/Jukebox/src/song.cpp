@@ -50,7 +50,7 @@ float Song::getAverageRating() {
 		// throw "divisionByZero";
 		return 0;
 	}
-	return sumOfRating / countofRating;
+	return ((float) sumOfRating) / ((float) countofRating);
 }
 
 Song::~Song() {

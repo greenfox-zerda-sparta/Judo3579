@@ -4,7 +4,7 @@ Jukebox::Jukebox() {
 
 }
 
-bool Jukebox::rate(string title, string artist, int rate) {
+bool Jukebox::rate(string artist, string title, int rate) {
 	bool success = false;
 	for (unsigned int i = 0; i < songs.size(); i++) {
 		if (songs[i].getTitle() == title && songs[i].getArtist() == artist) {
