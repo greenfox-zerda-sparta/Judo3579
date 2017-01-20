@@ -1,0 +1,17 @@
+﻿<Window x:Class="SMTP_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="HALLOWELT" Height="720" Width="1280">
+    <StackPanel Background="Green" Margin="0" Cursor="Hand">
+        <TextBlock HorizontalAlignment="Center" FontSize="92"><Run Text="Hi Everyone!"/></TextBlock>
+        <TextBlock FontSize="42" TextAlignment="Center" Height="109"><Run Text="Please give an e-mail address, a subject "/><LineBreak/><Run Text="and write the e-mail!"/></TextBlock>
+        <TextBox x:Name="emailAddress" Height="20" TextWrapping="Wrap" Text="" HorizontalAlignment="Center" Width="200" Margin="0,20,0,0"/>
+        <TextBox x:Name="subject"  Height="40" Margin="20,20,20,0" FontSize="32"></TextBox>
+        <TextBox x:Name="textBody" Height="250" Margin="20,20,20,0" FontSize="36" TextWrapping="Wrap" AcceptsReturn="True"></TextBox>
+        <Button x:Name="ok" FontSize ="20" HorizontalAlignment="Center" Click="ok_Click" Content="OK" Height="55" Width="150" Margin= "0,20,0,20"/>
+    </StackPanel>
+</Window>
