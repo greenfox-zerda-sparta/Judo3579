@@ -41,10 +41,8 @@ namespace SMTP_WPF
 
             var builder = new BodyBuilder();
 
-            // Set the plain-text version of the message text
             builder.TextBody = textBody.Text;
 
-            // Now we just need to set the message body and we're done
             message.Body = builder.ToMessageBody();
 
 
@@ -52,11 +50,8 @@ namespace SMTP_WPF
             {
                 client.Connect("smtp.gmail.com", 587, false);
 
-                // Note: since we don't have an OAuth2 token, disable
-                // the XOAUTH2 authentication mechanism.
                 client.AuthenticationMechanisms.Remove("XOAUTH2");
 
-                // Note: only needed if the SMTP server requires authentication
                 client.Authenticate("peridot.zerda@gmail.com", "zerda.peridot");
 
                 client.Send(message);
