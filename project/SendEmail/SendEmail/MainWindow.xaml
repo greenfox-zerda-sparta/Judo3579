@@ -25,15 +25,12 @@
                          CornerRadius="8">
                     <Grid>
                         <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
                         <ColumnDefinition Width="14*"/>
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="To" Grid.Column="0"/>
+                        <TextBlock Text="To: " Grid.Column="0"/>
                         <TextBox                     
                             Name="To"
-                            Margin="0,0,0,0"
-                            HorizontalAlignment="Stretch"
-                            VerticalAlignment="Stretch"
                             Grid.Column="1"
                             BorderThickness="0"
                             TextWrapping="Wrap" 
@@ -48,23 +45,20 @@
                         <RowDefinition/>
                         <RowDefinition Height="2*"/>
                     </Grid.RowDefinitions>
-                    <Border  Grid.Row="0"
+                    <Border  Grid.Row="1"
                          Padding="5"
                          BorderBrush="Lavender" 
                          BorderThickness="1"
                          CornerRadius="8">
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="auto"/>
                                 <ColumnDefinition Width="10*"/>
                             </Grid.ColumnDefinitions>
-                            <TextBlock Text="Subject" Grid.Column="0"/>
+                            <TextBlock Text="Subject: " Grid.Column="0"/>
                             <TextBox 
                             Name="Subject" 
                             Grid.Column="1" 
-                            Margin="0,0,0,0"
-                            HorizontalAlignment="Stretch"
-                            VerticalAlignment="Stretch"
                             BorderThickness="0"
                             TextWrapping="Wrap" 
                             Background="WhiteSmoke"
@@ -75,7 +69,7 @@
                     Padding="5"
                     BorderThickness="1"
                     CornerRadius="8"
-                    Grid.Row="1" Margin="0,0,0,-434" >
+                    Grid.Row="2" Margin="0,0,0,-434" >
                         <TextBox 
                          Name="Body"
                          BorderThickness="0"
@@ -88,7 +82,9 @@
                 </Grid>
             </Grid>
         </Grid>
+        <Grid>
         <Button Height="20"  Name="Send" Click="send_Click" VerticalAlignment="Bottom" HorizontalAlignment="Right" Background="Lavender" Margin="0,0,10,20" Width="91">Send
         </Button>
+        </Grid>
     </Grid>
 </Window>
