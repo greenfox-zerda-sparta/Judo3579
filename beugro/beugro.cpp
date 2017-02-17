@@ -17,9 +17,10 @@ int main() {
   int temp = 0;
 
   for (int i=0; i<6; i++) {
-    if (arr[i] % 2 && arr[i] > temp)
+    if (arr[i] % 2 && arr[i] > temp) {
    	temp = arr[i-1];
     }
+  }
 
   cout << "The biggest number is: " << temp << endl;
   return 0;
