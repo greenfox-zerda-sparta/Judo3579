@@ -7,24 +7,16 @@
 //============================================================================
 
 #include <iostream>
-
+#include "beugro.h"
 using namespace std;
 
-int second_biggest_number (int arr[]) {
-  int temp = arr[1];
-  for (int i=3; i<6; i=i+2) {
-    if (arr[i] > temp) {
-	  temp = arr[i];
-    }
-  }
-  return temp;
-}
 
 
-int main() {
+/*int main() {
 
   int arr[6] = {1, 3, 8, 6, 7, 4};
+  secondBiggestNumber sb;
 
-  cout << second_biggest_number(arr) << endl;
+  cout << sb.second_biggest_number(arr) << endl;
   return 0;
-}
+}*/
